@@ -8,6 +8,8 @@
 
 @import 'global';
 
+@import 'media';
+
 .header {
   padding: 45px 0;
 
@@ -171,4 +173,140 @@
   }
 }
 
-@import 'media';
+.top-slider {
+  background-image: url('../images/top-slider-bg.png');
+  background-repeat: no-repeat;
+  padding: 180px 0 40px 0;
+
+  &__inner {
+    margin: 0 60px;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-around;
+    padding-bottom: 160px;
+  }
+
+  &__content {
+    margin-right: 100px;
+  }
+
+  &__title {
+    max-width: 425px;
+    @extend %Rubik-500;
+    text-transform: uppercase;
+    font-size: 72px;
+    color: #243f4d;
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    max-width: 370px;
+    @extend %Rubik-400;
+    font-size: 18px;
+    color: #243f4d;
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  &__link {
+    max-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 17px 20px 25px;
+    background-color: #a3bbc8;
+    color: #fff;
+    @extend %Rubik-500;
+    font-size: 15px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin-right: 12px;
+      align-items: center;
+      @extend %Rubik-500;
+      background-color: #fde3cc;
+      border-radius: 50%;
+
+      button {
+        font-size: 11px;
+        padding: 0;
+        color: #243f4d;
+        width: 27px;
+        height: 27px;
+      }
+
+      &.slick-active {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+}
+
+.bottom-slider {
+  padding: 50px 0 40px;
+  background-color: #fef7f0;
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    max-width: 200px
+  }
+
+  &__title {
+    @extend %DMSans-700;
+    font-size: 18px;
+    color: #414141;
+    line-height: 30px;
+    position: relative;
+  }
+
+  &__text {
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .support::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/support.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 53px;
+    height: 54px;
+    transform: translateX(-120%);
+  }
+
+  .delivery::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/delivery-truck.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 54px;
+    height: 38px;
+    transform: translateX(-120%);
+  }
+
+  .payment::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icons/credit-card.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 54px;
+    height: 55px;
+    transform: translateX(-120%);
+  }
+}
