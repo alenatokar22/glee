@@ -454,20 +454,55 @@
 }
 
 .design {
+  padding-bottom: 120px;
+
   &__item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 35px 30px;
   }
 
+  &__list {
+    padding: 42px 0 30px 35px;
+    background-color: #f8f8f8;
+    height: 260px;
+    width: 370px;
+    overflow: hidden;
+  }
+
   &__list-title {
     color: $title;
     @extend %DMSans-700;
     font-size: 20px;
+    width: 170px;
   }
 
   &__list-link {
     color: #a3bbc8;
     @extend %DMSans-700;
+  }
+
+  &__list-img {
+    margin-top: -27px;
+    margin-left: 80px;
+  }
+}
+
+.video__design {
+
+  &-popup {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 480px;
+  }
+
+  &-play {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: translate(1%, 120%);
   }
 }
