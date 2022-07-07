@@ -586,9 +586,7 @@
 
 .partners {
   background-color: #fef7f0;
-  height: 435px;
-  padding-top: 235px;
-  margin-top: -190px;
+  padding: 78px 0 87px;
 
   &-item {
     display: flex;
@@ -598,4 +596,75 @@
   &-list {
     margin-right: 10px;
   }
+}
+
+.top {
+  background-color: #edf1f4;
+
+  &__container {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %Rubik-400;
+    font-size: 36px;
+  }
+}
+
+.modal {
+  padding-top: 116px;
+  max-width: 467px;
+  margin: 0 auto 115px;
+  color: #436372;
+
+  &__label {
+    margin-bottom: 33px;
+    display: block;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    height: 58px;
+    margin-top: 5px;
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0;
+    margin-bottom: 22px;
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__error {
+    margin-left: 150px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-top: 33px;
+    border-top: 1px solid #f6f6f6;
+  }
+}
+
+.modal__btn--white {
+  border: 2px solid #a3bbc8;
+  background-color: #fff;
+  color: $default;
+}
+
+.modal__label label {
+  cursor: pointer;
 }
