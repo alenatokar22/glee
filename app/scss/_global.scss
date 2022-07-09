@@ -59,6 +59,7 @@ body {
 
     &:last-child {
       color: red;
+
       &::after {
         display: none;
       }
@@ -68,5 +69,18 @@ body {
   &__link {
     @extend %Rubik-400;
     font-size: 14px;
+  }
+}
+
+.btn--grey {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 17px 20px;
+  background-color: #a3bbc8;
+  color: #fff;
+  font-size: 15px;
+  width: fit-content;
+  &__img {
+    margin: 4px 0 0 20px;
   }
 }
