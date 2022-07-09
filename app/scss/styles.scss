@@ -894,3 +894,20 @@
     }
 }
 }
+
+.terms {
+  padding-top: 118px;
+
+  &__item {
+    padding-bottom: 56px;
+    &-title {
+      font-size: 24px;
+      font-weight: bold;
+      padding-bottom: 30px;
+    }
+    &-text {
+      padding-bottom: 30px;
+      line-height: 1.6;
+    }
+  }
+}
